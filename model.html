@@ -118,9 +118,9 @@ function initialize()
 	let loader = new THREE.TextureLoader();
 	// let texture = loader.load( 'images/earth.jpg', render );
 	let material1 = new THREE.MeshBasicMaterial( { color: 0xffffff, opacity: 0.95 } );
-	mesh1 = new THREE.Mesh( geometry1, material1 );
-	mesh1.rotation.x = -Math.PI/2;
-	markerRoot1.add( mesh1 );
+	//mesh1 = new THREE.Mesh( geometry1, material1 );
+	//mesh1.rotation.x = -Math.PI/2;
+	//markerRoot1.add( mesh1 );
 	
 	function onProgress(xhr) { console.log( (xhr.loaded / xhr.total * 100) + '% loaded' ); }
 	function onError(xhr) { console.log( 'An error happened' ); }
