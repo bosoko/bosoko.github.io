@@ -1,23 +1,15 @@
-<!DOCTYPE html>
+<!doctype HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="generator" content="GitLab Pages">
-    <title>Plain HTML site using GitLab Pages</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="https://pages.gitlab.io/plain-html/">Plain HTML Example</a>
-      <a href="https://gitlab.com/pages/plain-html/">Repository</a>
-      <a href="https://gitlab.com/pages/">Other Examples</a>
-    </div>
-
-    <h1>Hello World!</h1>
-
-    <p>
-      This is a simple plain-HTML website on GitLab Pages, without any fancy static site generator.
-    </p>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene stats embedded arjs='trackingMethod: best;'>
+      <a-marker preset="hiro">
+      <a-box position='0 1 0' material='color: blue;'>
+      </a-box>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
   </body>
 </html>
-
