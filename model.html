@@ -121,6 +121,10 @@ function initialize()
 	//mesh1 = new THREE.Mesh( geometry1, material1 );
 	//mesh1.rotation.x = -Math.PI/2;
 	//markerRoot1.add( mesh1 );
+	// ADD POINT LIGHT
+	let pointLight = new THREE.PointLight( 0xffffff, 1, 100 );
+	pointLight.position.set(0.5,3,2);
+	markerRoot1.add( pointLight );
 	
 	function onProgress(xhr) { console.log( (xhr.loaded / xhr.total * 100) + '% loaded' ); }
 	function onError(xhr) { console.log( 'An error happened' ); }
